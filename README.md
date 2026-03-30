@@ -1,34 +1,13 @@
 # My Application README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+## Image Upload & Gallery
 
-To start the application in development mode, import it into your IDE and run the `Application` class. 
-You can also start the application from the command line by running: 
+Right-click Application.java / IDE run button click
 
-```bash
-./mvnw
-```
+Open your browser and go to: http://localhost:8080
 
-To build the application in production mode, run:
+You should see: Header with title , Upload area with drag & drop , Images
 
-```bash
-./mvnw package
-```
+Upload Images: Drag & drop images or click Browse Files , Uploaded images appear in the gallery grid immediately , Click an image → large dialog view , Click delete → confirmation dialog → removes the image
 
-To build a Docker image, run:
-
-```bash
-docker build -t my-application:latest .
-```
-
-If you use commercial components, pass the license key as a build secret:
-
-```bash
-docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
-```
-
-## Getting Started
-
-The [Quick Start](https://vaadin.com/docs/v25/getting-started/quick-start) tutorial helps you get started with Vaadin in 
-around 10 minutes. This tutorial walks you through building a simple application, introducing the core concepts along 
-the way.
+Notifications show success/failure messages.
